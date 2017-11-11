@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'familiar_probold';
+    src: url('fonts/font2/Familiar_Pro-Bold-webfont.eot');
+    src: url('fonts/font2/Familiar_Pro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font2/Familiar_Pro-Bold-webfont.woff2') format('woff2'),
+         url('fonts/font2/Familiar_Pro-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'abhaya_librebold';
+    src: url('fonts/font1/AbhayaLibre-Bold-webfont.eot');
+    src: url('fonts/font1/AbhayaLibre-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font1/AbhayaLibre-Bold-webfont.woff2') format('woff2'),
+         url('fonts/font1/AbhayaLibre-Bold-webfont.woff') format('woff'),
+         url('fonts/font1/AbhayaLibre-Bold-webfont.ttf') format('truetype'),
+         url('fonts/font1/AbhayaLibre-Bold-webfont.svg#abhaya_librebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "abhaya_librebold";
+  font-size: 10px
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  word-spacing: 3px;
+}
+
+/* Layout */
+
+section {
+
+  float: left;
+  width: 50%;
+  line-height: 1.5;
+  
+}
+
+aside {
+  float: left;
+  width: 30%;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  line-height: 1.5;
+}
+
+footer {
+  clear: both;
+  font-size: 15px
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+header {
+  font-family:"familiar_probold" ;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+h2+p {
+  text-indent: 20px;
+}
+
+a {
+  outline:none ;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: blue;
+}
+
+ a:visited {
+  color: lightpink;
+}
+
+a:focus{
+  outline: none;
+  color: red;
+}
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
+
+a[href*="http"]{
+  background: url('https://raw.githubusercontent.com/gomycodetn/fullstackjs-course/master/1_4%20Intro%20to%20CSS/Assessment_community_website/external-link-52.png') no-repeat 100% 0;
+   background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+nav li {
+   border:2px solid lightpink ;
+     padding-top: 5px;
+    padding-bottom: 5px;
+ margin-top: 14px;
+ text-align: center;
+ list-style-type: none;
+
+}
